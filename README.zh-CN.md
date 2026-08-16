@@ -1,5 +1,7 @@
 # dsh-safe-workflow
 
+[English](README.md) | 简体中文
+
 一个独立的 DeepSeek Harness 插件，用于构建更安全、可验证、可恢复的 Agent 编码工作流。
 
 它提供一个面向模型的工具 `safe_workflow`，支持以下操作：
@@ -209,4 +211,3 @@ npm run check
 - Web UI 任务状态卡片；
 - diff review 和人工批准；
 - 更严格的插件权限审计。
-

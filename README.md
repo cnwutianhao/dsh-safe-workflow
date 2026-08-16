@@ -1,5 +1,7 @@
 # dsh-safe-workflow
 
+English | [简体中文](README.zh-CN.md)
+
 An independent DeepSeek Harness plugin for safer, evidence-backed coding workflows.
 
 It provides one model-facing tool, `safe_workflow`, with these operations:
