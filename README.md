@@ -39,6 +39,10 @@ pnpm dsh --profile web --dump-config | grep dsh-safe-workflow
 pnpm dsh web
 ```
 
+After installation, the plugin appears in the DSH plugin list and is enabled for the Web profile:
+
+![dsh-safe-workflow installed and enabled](docs/images/plugin-installed.png)
+
 The plugin writes state into the current session workspace under `.dsh-safe-workflow/`:
 
 ```text
@@ -58,6 +62,10 @@ Require approval before bash, write, edit, or str_replace_editor.
 ```
 
 Then ask the agent to use `safe_workflow verify` after the implementation and `safe_workflow close` only when the acceptance checks pass.
+
+When a mutating tool is about to run, the approval gate explains the requested operation and lets you approve or keep the contract unchanged:
+
+![Approval gate before modifying files](docs/images/approval-gate.png)
 
 ## Important limitations
 

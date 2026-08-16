@@ -40,6 +40,10 @@ pnpm dsh --profile web --dump-config | grep dsh-safe-workflow
 pnpm dsh web
 ```
 
+安装完成后，可以在 DSH 的插件列表中看到并启用本插件：
+
+![dsh-safe-workflow 已安装并启用](docs/images/plugin-installed.png)
+
 本插件不会修改 DSH 主工程源码，只会作为 profile dependency 安装到 DSH 的 profile 目录中。
 
 ## 一个基本工作流
@@ -65,6 +69,10 @@ pnpm dsh web
 使用 safe_workflow verify 执行 npm test 和 npm run typecheck。
 只有验收标准全部通过后，才能关闭安全工作流。
 ```
+
+当 Agent 即将执行文件修改等可变更操作时，审批门禁会展示操作内容，并允许批准或保持当前契约不变：
+
+![修改文件前的审批门禁](docs/images/approval-gate.png)
 
 也可以直接要求 Agent 手动创建 checkpoint：
 
