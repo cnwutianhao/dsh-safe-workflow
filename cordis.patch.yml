@@ -1,0 +1,6 @@
+- id: dsh-safe-workflow
+  name: dsh-safe-workflow
+  config:
+    stateDirName: .dsh-safe-workflow
+    approvalMode: ask
+    autoCheckpoint: true
