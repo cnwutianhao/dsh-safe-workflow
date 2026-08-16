@@ -30,8 +30,11 @@ npm run check
 Then, from the DSH checkout, install this directory into the Web profile:
 
 ```bash
-cd /Users/wutianhao/Desktop/deepseek-harness
-pnpm dsh plugin --profile web add /Users/wutianhao/Documents/Codex/2026-08-16/ka/outputs/dsh-safe-workflow
+DSH_DIR=/path/to/deepseek-harness
+PLUGIN_DIR=/path/to/dsh-safe-workflow
+
+cd "$DSH_DIR"
+pnpm dsh plugin --profile web add "$PLUGIN_DIR"
 pnpm dsh --profile web --dump-config | grep dsh-safe-workflow
 pnpm dsh web
 ```
